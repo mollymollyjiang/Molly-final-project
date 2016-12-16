@@ -1,0 +1,46 @@
+body{
+   background:#F8F4EF;
+   color:#585F5D;
+}
+
+    .canvas{
+    width:100%;
+    min-height:600px;
+}
+
+/* tooltip */
+.container{
+    position:relative;
+}
+.custom-tooltip{
+    position:absolute;
+    width:150px;
+    min-height:20px;
+    padding:10px 5px;
+    background: #5B5B5B;
+   
+    box-shadow: 0 2px 2px 0px rgba(0,0,0,.1);
+    top:0;
+    left:0;
+    /*visibility:hidden;*/
+    opacity:0;
+}
+    .custom-tooltip .price{
+        font-size:1.2em;
+        font-weight:bold;
+        color: #F8F4EF;
+}    
+    .custom-tooltip .location{
+        font-size:0.9em;
+        font-weight:solid;
+        color: #F8F4EF;
+
+
+    }
+    .custom-tooltip .value{
+        font-size:0.9em;
+        font-weight:solid;
+        color: #F8F4EF;
+
+
+    }

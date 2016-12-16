@@ -1,0 +1,70 @@
+
+
+.axisX .tick line{
+	stroke:#F8F4EF;
+    stroke-width:0px;
+
+}
+
+.axisX .tick text{
+	stroke:darkgrey;
+    stroke-width:.5px;
+    font-size:12px;
+
+}
+.axisY .tick text{
+	stroke:darkgrey;
+    stroke-width:.5px;
+   
+
+}
+
+.btn-group{
+	top:10px;
+}
+
+.legend{
+	margin-left:700px;
+	margin-top:-110px;
+}
+
+.domain{
+	stroke:#F8F4EF;
+    stroke-width:.0px;
+
+}
+
+.axisY .tick line{
+	stroke:lightgrey;
+    stroke-width:.5px;
+
+}
+
+.Node1{
+    stroke:black;
+    stroke-width:0px;
+}
+
+.Node2{
+    stroke:#C55D4F;
+    stroke-width:0px;
+}
+.Node3{
+    stroke:black;
+    stroke-width:0px;
+}
+
+
+.container{
+	margin: 20px;
+}
+
+.highlight circle{
+    stroke:blue;
+    stroke-width:2px;
+}
+
+
+
+
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href="../bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../global.css" rel="stylesheet"/>
+    <link href="./style.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="container">
+    <h1>Get your sweet room in Airbnb Boston!</h1>
+    <div class="btn-group">
+        <div class="btn-primary btn" style="background-color: #585F5D; border-color: #F8F4EF; position: relative; margin: 0px; opacity:0.65; display: inline-block; border-style: solid; border-width: 1px" id="Room_Type">Room Type</div>
+        <div class="btn-primary btn" style="background-color: #585F5D; border-color: #F8F4EF; position: relative; margin: 0px; opacity:0.65; display: inline-block; border-style: solid; border-width: 1px" id="Room_Price">Room Price Ranking</div>
+        <div class="btn-primary btn" style="background-color: #585F5D; border-color: #F8F4EF; position: relative; margin: 0px; opacity:0.65; display: inline-block; border-style: solid; border-width: 1px" id="Town">Price by Town</div>
+    </div>
+    <div class='legend'>
+    <img src='../legend.png' style='width: 800px;height:140px'>
+    </div>
+    <section class="canvas" id="canvas">
+    </section>
+
+    <div class="custom-tooltip">
+        <p class="price"></h3>
+        <p class="location"></h3>
+        <p class="value"></h3>
+    </div>
+</div>
+
+
+<script src="../d3.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
