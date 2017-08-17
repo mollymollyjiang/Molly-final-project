@@ -137,9 +137,11 @@ var roomTypeEnter = roomType.enter()
         var tooltip = d3.select('.custom-tooltip');
            
             tooltip.select('.price')
-                .html('Price : $' + d.price)
+                .html('Price : ' + d.price + " $/d")
             tooltip.select('.location')
-                .html('Location : ' +d.neighbor);
+                .html('Location : ' +d.neighbor)
+            tooltip.select('.bedrooms')
+                .classed('hidden',true);
 
             tooltip.transition().style('opacity',0.8);
 
@@ -176,7 +178,7 @@ roomTypeEnter
    
 
 };
-
+roomTypeEnter.exit().remove(); 
 
 
 //--------------------------     Draw price  dots       -----------------------------------------
@@ -212,9 +214,12 @@ var priceNodeEnter = priceNode.enter()
         var tooltip = d3.select('.custom-tooltip');
            
             tooltip.select('.price')
-                .html('Price : $' + d.price)
+                .html('Price : ' + d.price + " $/d")
             tooltip.select('.location')
-                .html('Location : ' +d.neighbor);
+                .html('Location : ' +d.neighbor)
+            tooltip.select('.bedrooms')
+                .html('Bedrooms : ' +d.bedrooms)
+                .classed('hidden',false);
 
             tooltip.transition().style('opacity',0.8);
 
@@ -263,7 +268,7 @@ priceNodeEnter
    .style("opacity",".55")
 
 }
-
+priceNodeEnter.exit().remove();
 
 //--------------------------  Draw the rooms by town     ---------------------------------------
 
@@ -369,11 +374,13 @@ roomNode.on('click',function(d,i){
         var tooltip = d3.select('.custom-tooltip');
            console.log(tooltip.node())
             tooltip.select('.price')
-                .html('Price : $' + d.price)
-                tooltip.select('.value')
-                .html('reviews : ' +d.reviews)
+                .html('Price : ' + d.price + " $/d")
+            tooltip.select('.value')
+                .html('Reviews : ' +d.reviews)
             tooltip.select('.location')
-                .html('Location : ' +d.neighbor);
+                .html('Location : ' +d.neighbor)
+            tooltip.select('.bedrooms')
+                .classed('hidden',true);
             
 
             tooltip.transition().style('opacity',.8);
@@ -398,7 +405,6 @@ roomNode.on('click',function(d,i){
             d3.select(this).style('stroke-width','0px');
 
             });
-
 
 
 
@@ -454,7 +460,8 @@ function parseData(d){
         lon:+d["longitude"], 
         roomType:d["room_type"],
         reviews:+d["reviews"],
-        roomId: d["room_id"]  
+        bedrooms:+d["bedrooms"],
+        roomId:d["room_id"]  
 
 }
  rate.set(d.id,+d.price);

@@ -18,13 +18,16 @@
    
 
 }
+.hidden{
+    display: none;
+}
 
 .btn-group{
 	top:10px;
 }
 
 .legend{
-	margin-left:700px;
+	margin-left:650px;
 	margin-top:-110px;
 }
 

@@ -1,5 +1,5 @@
 body{
-   background:#F8F4EF;
+   background:#FFFFFF;
    color:#585F5D;
 }
 
@@ -17,7 +17,7 @@ body{
     width:150px;
     min-height:20px;
     padding:10px 5px;
-    background: #5B5B5B;
+    background: #C94754;
    
     box-shadow: 0 2px 2px 0px rgba(0,0,0,.1);
     top:0;
@@ -38,6 +38,13 @@ body{
 
     }
     .custom-tooltip .value{
+        font-size:0.9em;
+        font-weight:solid;
+        color: #F8F4EF;
+
+
+    }
+      .custom-tooltip .bedrooms{
         font-size:0.9em;
         font-weight:solid;
         color: #F8F4EF;
